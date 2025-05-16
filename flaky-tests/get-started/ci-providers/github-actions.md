@@ -72,7 +72,7 @@ jobs:
         with:
           junit-paths: "**/junit.xml"        
           org-slug: <TRUNK_ORG_SLUG>
-          token: ${{ secrets.TRUNK_TOKEN }}
+          token: ${{ secrets.TRUNK_API_TOKEN }}
 
 ```
 {% endtab %}
@@ -95,7 +95,7 @@ jobs:
         with:
           xcresult-path: "./test-results.xcresult"        
           org-slug: <TRUNK_ORG_SLUG>
-          token: ${{ secrets.TRUNK_TOKEN }}
+          token: ${{ secrets.TRUNK_API_TOKEN }}
 ```
 {% endtab %}
 
@@ -117,7 +117,7 @@ jobs:
         with:
           bazel-bep-path: "./build_events.json"        
           org-slug: <TRUNK_ORG_SLUG>
-          token: ${{ secrets.TRUNK_TOKEN }}
+          token: ${{ secrets.TRUNK_API_TOKEN }}
 ```
 {% endtab %}
 {% endtabs %}
